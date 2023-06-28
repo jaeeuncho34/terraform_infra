@@ -1,4 +1,4 @@
-*.tfstate
-*.tfstate.*
+*/*.tfstate
+*/*.tfstate.*
 */terraform_infra.code-workspace
 **/.terraform/*
