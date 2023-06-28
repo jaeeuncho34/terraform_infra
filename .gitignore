@@ -1,0 +1,4 @@
+*.tfstate
+*.tfstate.backup
+terraform_infra.code-workspace
+.terraform/
