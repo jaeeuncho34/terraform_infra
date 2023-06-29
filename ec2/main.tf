@@ -8,7 +8,7 @@ module "ec2-instance" {
   key_name      = var.pem_key
   monitoring    = true
 
-  vpc_security_group_ids = [aws_security_group.ssh.id]
+  vpc_security_group_ids = [local.default_sg]
   subnet_id              = local.subnet
 
   iam_instance_profile = "EC2RoleforSSM"
