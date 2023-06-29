@@ -2,3 +2,4 @@
 **/*.tfstate.*
 **/terraform_infra.code-workspace
 **/.terraform/*
+**/.terraform.lock.hcl
