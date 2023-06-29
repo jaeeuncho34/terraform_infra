@@ -20,5 +20,5 @@ data "terraform_remote_state" "vpc" {
   config = {
     path = "../vpc/terraform.tfstate"
   }
-  
+
 }
