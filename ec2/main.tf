@@ -11,7 +11,7 @@ module "ec2-instance" {
   vpc_security_group_ids = [aws_security_group.ssh.id]
   subnet_id              = local.subnet
 
-  iam_role_name = "EC2RoleforSSM"
+  iam_instance_profile = "EC2RoleforSSM"
 
   tags = {
     Terraform = "true"
