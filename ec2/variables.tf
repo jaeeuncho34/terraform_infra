@@ -1,3 +1,15 @@
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "ap-northeast-2"
+}
+
+variable "aws_profile" {
+  description = "AWS profile"
+  type        = string
+  default     = "jaecho"
+}
+
 variable "instance_name" {
   description = "AWS EC2 instance name"
   type        = string
@@ -16,14 +28,19 @@ variable "pem_key" {
   default     = "bastion"
 }
 
-variable "aws_region" {
-  description = "AWS region"
-  type        = string
-  default     = "ap-northeast-2"
-}
+# variable "sg" {
+#   description = "AWS EC2 security group"
+#   type        = list(any)
+#   default     = [local.default_sg]
+# }
 
-variable "aws_profile" {
-  description = "AWS profile"
-  type        = string
-  default     = "jaecho"
+# variable "subnet" {
+#   description = "AWS EC2 Subnet"
+#   type        = string
+#   default     = local.private_subnet
+# }
+
+variable "public" {
+  type    = bool
+  default = null
 }

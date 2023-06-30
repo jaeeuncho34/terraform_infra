@@ -23,3 +23,4 @@ resource "aws_security_group" "ssh" {
     Name = "allow_ssh"
   }
 }
+
